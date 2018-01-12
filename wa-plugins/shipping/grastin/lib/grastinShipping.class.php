@@ -37,6 +37,9 @@ class grastinShipping extends waShipping
            'deliveryAddress' => array(
                'city' => $this->getAddress('city')
            ),
+           'shipmentAddress' => array(
+               'city' => $GLOBALS['yandex']['city']
+           ),
            'extraData' => array(
                'services' => $this->services,
                'contract' => $this->contract,
