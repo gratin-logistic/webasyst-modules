@@ -8,4 +8,5 @@ return array(
     'version'     => '1.0',
     'locale'      => array('ru_RU'),
     'external'    => true,
+    'vendor'      => 1100677,
 );

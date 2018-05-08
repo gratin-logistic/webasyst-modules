@@ -1,12 +1,11 @@
 <?php
 
-class grastinShipping extends waShipping
+class grastinRuShipping extends waShipping
 {
     const METHOD_GET = 'GET';
     const METHOD_POST = 'POST';
 
     protected $url = 'https://bringer.pro/plus/grastin/wa';
-    protected $yandexUrl = 'https://geocode-maps.yandex.ru/1x/'
 
     public function calculate()
     {
@@ -37,9 +36,6 @@ class grastinShipping extends waShipping
            'declaredValue' => $this->getTotalPrice(),
            'deliveryAddress' => array(
                'city' => $this->getAddress('city')
-           ),
-           'shipmentAddress' => array(
-               'city' => file_get_contents($this->yandexUrl . '?city=' . $GLOBALS['yandex']['city'])
            ),
            'extraData' => array(
                'services' => $this->services,
