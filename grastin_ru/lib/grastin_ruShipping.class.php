@@ -1,6 +1,6 @@
 <?php
 
-class grastinRuShipping extends waShipping
+class grastin_ruShipping extends waShipping
 {
     const METHOD_GET = 'GET';
     const METHOD_POST = 'POST';
